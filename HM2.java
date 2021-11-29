@@ -4,12 +4,14 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Write a method named isEven that accepts an int argument.
+    //1. Write a method named isEven that accepts an int argument.
     // The method should return true if the argument is even, or false otherwise.
 
     static Scanner s = new Scanner(System.in);
 
     public static void main(String[] args) {
+        
+        //1: 
         // true / false
         System.out.println("Enter a Number - ");
         int numberFromUser = s.nextInt();
@@ -22,6 +24,9 @@ public class Main {
         int n = 9;
         boolean isZugi = isEven(n);
         System.out.println("is 9 zugi? " + isZugi);
+        
+        //2:
+        
     }
 
     public static boolean isEven(int number){
