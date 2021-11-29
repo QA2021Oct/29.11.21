@@ -26,9 +26,23 @@ public class Main {
         System.out.println("is 9 zugi? " + isZugi);
         
         //2:
+        double array [] = {62.5, 30, 98, 100, 55.5, 80, 75, 40 , 56, 99, 86, 85.5, 55, 90};
+        double max = greatestGrade(array);
+        System.out.println(max);
         
     }
 
+    public static double greatestGrade(double [] array){
+        double maxGrade = 0 ;
+        for(int i = 0; i < array.length; i++){   // { 98  > 62.5
+            if(array[i] > maxGrade){
+                maxGrade = array[i]; // maxGrade = 98
+            }
+           // maxGrade = Math.max(array[i], maxGrade);
+        }
+        return maxGrade;
+    }
+    
     public static boolean isEven(int number){
         if(number % 2 == 0 ){
             return true;
