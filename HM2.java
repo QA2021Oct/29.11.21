@@ -17,6 +17,11 @@ public class Main {
         boolean result = isEven(numberFromUser);
         System.out.println(result);
         //System.out.println(isEven(numberFromUser));  ///same
+        
+         // without Scanner:
+        int n = 9;
+        boolean isZugi = isEven(n);
+        System.out.println("is 9 zugi? " + isZugi);
     }
 
     public static boolean isEven(int number){
