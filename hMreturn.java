@@ -23,6 +23,10 @@ public class Main {
         int array1 [] = {5,10,15};
         int avgArray1 = avgArray(array1);
         System.out.println(avgArray1);
+        
+         int array2 [] = {20,30,70,90,100};
+        int avgarray2 = avgArray(array2);
+        System.out.println(avgarray2);
     }
     
     public static int avgArray(int [] array){
