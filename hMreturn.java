@@ -19,8 +19,22 @@ public class Main {
         float hG = checkHigherGrade(g1, g2, g3);
         System.out.println(hG);
         System.out.println("rest of the code");
+        
+        int array1 [] = {5,10,15};
+        int avgArray1 = avgArray(array1);
+        System.out.println(avgArray1);
     }
-
+    
+    public static int avgArray(int [] array){
+        int sum = 0;  // will sun array values
+        for(int i = 0; i < array.length; i++){
+            //sum = sum + array[i];
+            sum += array[i];
+        }
+        int avg = sum / array.length;
+        return avg;
+    }
+    
     public static float checkHigherGrade(float grade1, float grade2, float grade3){
 
         return  Math.max(Math.max(grade1, grade2),grade3);
