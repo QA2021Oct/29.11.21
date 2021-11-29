@@ -27,6 +27,23 @@ public class Main {
          int array2 [] = {20,30,70,90,100};
         int avgarray2 = avgArray(array2);
         System.out.println(avgarray2);
+        
+         int arr1 [] = {9,5,2,0};
+        int arr2 [] = {0,0,8,7};
+        String result = maxArray(arr1, arr2);
+        System.out.println(result);
+    }
+    
+       public static String maxArray(int array1[], int array2 []){
+        if(array1.length > array2.length){
+            return "array1";
+        }
+        else if (array2.length > array1.length){
+            return "array2";
+        }
+        else {
+            return "equals";
+        }
     }
     
     public static int avgArray(int [] array){
